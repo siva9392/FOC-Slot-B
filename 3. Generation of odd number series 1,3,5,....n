@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    printf("Enter the number of odd numbers you want to generate: ");
+    scanf("%d", &n);
+    printf("The first %d odd numbers are: \n", n);
+    for (i = 1; i <= n*2; i += 2) {
+        printf("%d ", i);
+    }
+    return 0;
+}
