@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int number;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+    printf("The digits of the integer are: ");
+    while (number != 0) {
+        printf("%d ", number % 10);
+        number = number / 10;
+    }
+    return 0;
+}
